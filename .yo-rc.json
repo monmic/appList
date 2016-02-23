@@ -1,0 +1,14 @@
+{
+  "generator-angular-meteor": {
+    "filters": {
+      "coffee": true,
+      "html": true,
+      "less": true,
+      "pagination": false,
+      "framework": "bootstrap",
+      "bower": false,
+      "auth": false
+    },
+    "appname": "appName"
+  }
+}

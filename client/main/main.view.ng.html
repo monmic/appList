@@ -1,0 +1,27 @@
+<div class="main container">
+  <h1>List</h1>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <form ng-submit="add()" name="form" novalidate class="thing-form">
+        <p class="input-group">
+          <input type="text" placeholder="Name" ng-model="newThing.name" class="form-control" required/><span
+          class="input-group-btn">
+            <input type="submit" ng-disabled="form.$invalid" value="Add" class="btn btn-primary"/></span>
+        </p>
+      </form>
+      <div class="row">
+        <div class="col-md-9 col-sm-12">
+          <div class="row" ng-repeat="thing in things">
+            <div class="col-md-9 col-sm-12">
+              <p>{{ thing.name }}
+                <button ng-click="remove(thing)"
+                        class="btn">&times;</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>Total number of things: {{things.length}}</p>
+</div>
