@@ -18,7 +18,7 @@ autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 angular
 angularui:angular-ui-router
-ndxbxrme:ng-coffeescript
+coffeescript
 flemay:less-autoprefixer
 twbs:bootstrap
 angularui:angular-ui-bootstrap
